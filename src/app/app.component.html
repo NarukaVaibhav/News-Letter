@@ -1,0 +1,13 @@
+<app-header></app-header>
+ <div  class="card" *ngFor="let item of card">
+   <div class="card-header">{{item.title}}</div>
+   <div class="card-body">
+     <img src={{item.urlToImage}} alt="image" class="card-img-tops">
+     <div class="card">{{item.content}}</div>
+     <div class="blockquote-footer"><i>{{item.author}}</i></div>
+   </div>
+  <hr color="black">
+</div>
+
+<app-footer></app-footer>
+
